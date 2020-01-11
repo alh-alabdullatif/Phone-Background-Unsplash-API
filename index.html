@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Amiri&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="ICON" type="images/x-icon" href="icon.png" />
+
+    <meta name="description" content="Unsplash API retrieve Phone Backgrounds">
+    <meta name="keywords" content="HTML,CSS,jQuery,Unsplash API, Phone, Background, Wallpaper">
+    <meta name="author" content="Alhanouf">
+
+    <title> Phone Background</title>
+    </head>
+    <body>
+
+    <div class="main">
+            <h1> Phone Background</h1>
+            <a href="https://unsplash.com/?utm_source=utm_source=phone-background&utm_medium=referral"><p>Photos from Unsplash</p></a>
+            <hr>
+            <input type="text" id="search_query" placeholder="Search Backgrounds">
+            <button class='button' onclick="SearchBackgrounds();" onkeypress="SearchBackgrounds();">Search</button>
+        </div>
+     <div class="grid" id="grid"></div>
+
+    </body>
+</html>

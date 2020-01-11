@@ -1,0 +1,126 @@
+/* Made By Alhanouf used Unsplash API + CSS +jQuery*/ 
+
+/* phone view */
+@media screen and (min-width:768px) {
+    .main{
+        padding: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+    }
+    .grid{
+
+        grid-gap: 10px;
+        grid-template-columns: auto ;
+        margin-left: auto;
+        margin-right: auto;       
+        width: 60%;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        box-shadow: 8px 8px 33px 0px rgba(0,0,0,0.2);
+        perspective:2000px;
+        transform-origin: 50% 50%;
+        filter: url(#distortionFilter);
+        transition: transform .28s linear;
+    } 
+
+    h1 {
+        font-family: 'Amiri', serif;
+        font-weight: 100;
+        color: #17252A;
+        margin-bottom: -20px;;
+        font-size: 70px;    
+    }
+
+    h3 {
+        font-family: 'Amiri', serif;
+        font-weight: 100;
+        color: #05386B;
+        font-size: 25px;
+        margin-bottom: -5px;
+    }
+
+    p {
+        font-family: 'Amiri', serif;
+        font-weight: 100;
+        color:#379683; 
+        font-size: 30px;
+        margin-top: -18px;
+    }
+
+    body {
+        background-color: #FEFFFF;
+    }
+
+    a {
+        font-family: 'Amiri', serif;
+        font-weight: 100;
+        text-decoration: none;
+        color: #5CDB95 !important;
+        font-size: 20px;
+    }
+
+    input[type=text] {
+        width: 80%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        font-size: 20px;
+    }
+
+    .button {
+        background-color: #5CDB95;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+}
+
+/* Desktop view */
+@media screen and (min-width:1024px) {
+
+    .grid{
+    
+        padding: 5px;
+        display: grid;
+        grid-template-columns: auto auto;
+    
+    }
+
+    .bottom-left {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 40px;
+        
+    }
+
+    h3 {
+        font-size: 20px;
+        margin-bottom: -5px;
+    }
+
+    p {
+        font-size: 20px;
+        margin-top: -18px;
+    }
+
+
+    input[type=text] {
+        width: 51%;
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .button {
+        padding: 14px 20px;
+    }
+}
